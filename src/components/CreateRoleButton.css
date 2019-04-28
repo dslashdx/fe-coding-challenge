@@ -3,5 +3,6 @@
     background: #3eb8c8;
     border: 1px solid transparent;
     border-radius: 3px;
-    padding: 1em 2em;
+    font-weight: bold;
+    padding: 0.5em 1.5em;
 }

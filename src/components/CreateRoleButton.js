@@ -4,8 +4,8 @@ import './CreateRoleButton.css';
 class CreateRoleButton extends Component {
   render() {
     return (
-        <button class="CreateRoleButton">
-            Create Role
+        <button className="CreateRoleButton">
+            CREATE NEW ROLE
         </button>
     );
   }

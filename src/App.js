@@ -4,6 +4,7 @@ import './App.css';
 import SearchBox from './components/SearchBox';
 import RoleStatusFilter from './components/RoleStatusFilter';
 import CreateRoleButton from './components/CreateRoleButton';
+import RoleCardContainer from './components/RoleCardContainer';
 
 class App extends Component {
   render() {
@@ -18,6 +19,7 @@ class App extends Component {
           <RoleStatusFilter/>
           <CreateRoleButton/>
         </div>
+        <RoleCardContainer/>
       </div>
     );
   }

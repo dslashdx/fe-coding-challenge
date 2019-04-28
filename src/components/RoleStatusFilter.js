@@ -4,11 +4,11 @@ import './RoleStatusFilter.css';
 class RoleStatusFilter extends Component {
   render() {
     return (
-        <div class="RoleStatusFilter-container">
-            <label class="rsf-label" htmlFor="RoleStatusFilter">
+        <div className="RoleStatusFilter-container">
+            <label className="rsf-label" htmlFor="RoleStatusFilter">
                 Role Status
             </label>
-            <select class="RoleStatusFilter">
+            <select className="RoleStatusFilter">
                 <option value="Active">Active</option>
                 <option value="Inactive">Inactive</option>
                 <option value="ActiveAndInactive">Active and Inactive</option>

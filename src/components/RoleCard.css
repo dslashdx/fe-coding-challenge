@@ -1,0 +1,6 @@
+.RoleCard {
+    border: 1px solid grey;
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+}
