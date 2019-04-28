@@ -1,0 +1,15 @@
+.RoleStatusFilter-container {
+    display: flex;
+    flex-direction: column;
+}
+.rsf-label {
+    color: gray;
+}
+
+.RoleStatusFilter {
+    background: white;
+    border: none;
+    border-bottom: 1px solid rgb(114, 237, 241);
+    font-size: 1.25em;
+    outline: none;
+}
