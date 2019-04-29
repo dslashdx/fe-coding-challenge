@@ -1,4 +1,7 @@
 import React, { Component } from 'react';
+import { filterByStatus } from '../actions/actions';
+import { connect } from 'react-redux';
+
 import './RoleStatusFilter.css';
 
 class RoleStatusFilter extends Component {
@@ -8,10 +11,10 @@ class RoleStatusFilter extends Component {
             <label className="rsf-label" htmlFor="RoleStatusFilter">
                 Role Status
             </label>
-            <select className="RoleStatusFilter">
+            <select onChange={(e) => this.props.filterOnChange(e.target.value)} className="RoleStatusFilter">
+                <option value="ActiveAndInactive">Active and Inactive</option>
                 <option value="Active">Active</option>
                 <option value="Inactive">Inactive</option>
-                <option value="ActiveAndInactive">Active and Inactive</option>
             </select> 
         </div>
         
@@ -19,5 +22,9 @@ class RoleStatusFilter extends Component {
   }
 }
 
-export default RoleStatusFilter;
+const mapDispatchToProps = dispatch => ({
+  filterOnChange: status => dispatch(filterByStatus(status))
+})
+
+export default connect(null, mapDispatchToProps)(RoleStatusFilter);
 
