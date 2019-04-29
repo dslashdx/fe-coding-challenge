@@ -7,7 +7,7 @@ import './ModalCardEditor.css';
 //  Make adding users and images for users, figure out how ids are generated for users
 //  Change date_created on creation
 //  Change date_modified on modify
-//  Create redux actions for modify and create and hook up here
+//  Create redux actions for modify and create and hook up here and on the CreateRoleButton and Edit on RoleCard
 class ModalCardEditor extends Component {
     render() {
         return (
