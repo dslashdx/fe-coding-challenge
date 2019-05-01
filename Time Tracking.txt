@@ -1,9 +1,10 @@
 Start: 2pm 4/28
-Break: 3pm 15 minutes
-Start: 3:15pm
-Break 4:12pm 
-Start: 4:23pm
-End: 5:25pm
+End: 5:25pm 4/28
 
 Start: 5pm 4/29
 End: 6:44pm 4/29
+
+Start: 615pm 4/30
+Finished: 8pm
+
+Total time: ~ 7 hours

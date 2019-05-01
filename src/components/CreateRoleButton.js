@@ -1,15 +1,19 @@
-import React, { Component } from 'react';
+import React from 'react';
+import { selectCard } from '../actions/actions';
+import { connect } from 'react-redux';
 import './CreateRoleButton.css';
 
-class CreateRoleButton extends Component {
-  render() {
+const CreateRoleButton = ({ setSelectedCardToNew }) => {
     return (
-        <button className="CreateRoleButton">
+        <button className="CreateRoleButton" onClick={(e) => setSelectedCardToNew()}>
             CREATE NEW ROLE
         </button>
     );
-  }
 }
 
-export default CreateRoleButton;
+const mapDispatchToProps = dispatch => ({
+    setSelectedCardToNew: () => dispatch(selectCard({ id: '' }))
+})
+
+export default connect(null, mapDispatchToProps)(CreateRoleButton);
 

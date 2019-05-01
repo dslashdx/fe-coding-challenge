@@ -13,9 +13,9 @@ class RoleCardContainer extends Component {
     }
 
     render() {
-        let {cardData} = this.props;
-        const {filterStatus, searchTerms} = this.props;
-        
+        let { cardData } = this.props;
+        const { filterStatus, searchTerms } = this.props;
+
         if (filterStatus === "Active")
             cardData = cardData.filter((card) => card.active)
         else if (filterStatus === "Inactive")
@@ -23,18 +23,18 @@ class RoleCardContainer extends Component {
 
         if (searchTerms !== "")
             cardData = cardData.filter((card) => Object.values(card).join(' ').includes(searchTerms));
-            
+
         return (
             <div className="grid-container">
-            {
-                cardData.map((card) => <RoleCard key={card.id} {...card}/>)
-            }
+                {
+                    cardData.map((card) => <RoleCard key={card.id} {...card} />)
+                }
             </div>
         );
     }
 }
 
-const mapStateToProps = (state) => { 
+const mapStateToProps = (state) => {
     return {
         cardData: state.SetCardData.data,
         filterStatus: state.FilterByStatus.status,

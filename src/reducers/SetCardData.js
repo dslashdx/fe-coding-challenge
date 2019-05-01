@@ -1,7 +1,8 @@
 import { ACTION_TYPES } from '../actions/actions';
 
 const defaultState = {
-    data: []
+    data: [],
+    card: {}
 };
 
 export function SetCardData(state = defaultState, action) {
@@ -10,10 +11,12 @@ export function SetCardData(state = defaultState, action) {
             return { ...state, ...action };
 
         case ACTION_TYPES.DELETE_CARD:
-            return { ...state, data: state.data.filter(card => card.id !== action.id)}
+            return { ...state, data: state.data.filter(card => card.id !== action.id) }
+
+        case ACTION_TYPES.EDIT_CARD:
+            return { ...state, ...action };
 
         default:
             return state;
     }
 };
-
